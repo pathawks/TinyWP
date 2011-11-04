@@ -1,88 +1,108 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset='utf-8'>
-
-  <title>pathawks/TinyWP @ GitHub</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #276990;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #ffffff;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #d8966f; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #d8966f; }
-    h3 { text-align: center; color: #d8966f; }
-    a { color: #d8966f; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
-</head>
-
-<body>
-  <a href="https://github.com/pathawks/TinyWP"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
-    <div class="download">
-      <a href="https://github.com/pathawks/TinyWP/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/pathawks/TinyWP/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-    <h1><a href="https://github.com/pathawks/TinyWP">TinyWP</a>
-      <span class="small">by <a href="https://github.com/pathawks">pathawks</a></span></h1>
-
-    <div class="description">
-      TinyWP provides a very small WordPress installation program that will bootstrap a larger WordPress installation
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-      <h2>Authors</h2>
-      <p>pathawks (pathawks@shortmail.com)<br/>      </p>
-    
-
-    
-      <h2>Contact</h2>
-      <p>Pat Hawks (pat@pathawks.com)<br/>      </p>
-    
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="https://github.com/pathawks/TinyWP/zipball/master">zip</a> or
-      <a href="https://github.com/pathawks/TinyWP/tarball/master">tar formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/pathawks/TinyWP</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="https://github.com/pathawks/TinyWP">pathawks/TinyWP</a>
-    </div>
-
-  </div>
-
-</body>
+	<head>
+		<meta charset='utf-8'>
+		<title>TinyWP - WordPress Installer</title>
+		<link rel='shortcut icon' href='favicon.ico' />
+		<style type='text/css'>
+			html,body {
+				margin:0;
+				padding:0;
+				height:100%;
+				background: #d3e7f8;
+				font-family: Helvetica, Arial, FreeSans, san-serif;
+			}
+			#container {
+				min-height:100%;
+				margin: 0 auto;
+				padding:0 25px;
+				width: 650px;
+				background:#fff;
+				color:#464646;
+				position:relative;
+				overflow-x:hidden;
+			}
+			#container * {
+				z-index:10;
+			}
+			h1 {
+				margin:0 auto 0.5em;
+				padding:10px 0 0 140px;
+				color:transparent;
+				background: #fff url('TinyWP.png') no-repeat 10px center;
+				height:128px;
+				font-size:90px;
+			}
+			h2 {
+				color:#d54e21;
+				margin:1em 0 0;
+			}
+			p {
+				margin:0;
+				text-indent:1em;
+			}
+			ul {
+				margin:0 0 0 2em;
+				padding:0;
+			}
+			a {
+				color:#21759b;
+				text-decoration:none;
+			}
+			a:hover,a:focus {
+				color:#d54e21;
+				text-decoration:underline;
+			}
+			#githubbanner {
+				position: absolute;
+				top: 0;
+				right: 0;
+				border: 0;
+				z-index:0;
+				padding:0;
+				margin:0;
+				color:transparent;
+				background:transparent url('http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png') no-repeat top right;
+				height:140px;
+				width:140px;
+				border-radius: 0 0 0 140px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id='container'>
+			<h1>TinyWP</h1>
+			<p>
+				TinyWP provides a very small (&lt;500 bytes) <a href='http://WordPress.org'>WordPress</a> installation program that will bootstrap a larger WordPress installation.
+			</p>
+			<h2>How To Use</h2>
+			<ul>
+				<li>Download <a href='https://github.com/pathawks/TinyWP/blob/master/tinywp.php'>TinyWP</a></li>
+				<li>Upload <code>tinywp.php</code> to your server, in the directory you want to install WordPress</li>
+				<li>Point your browser to <code>tinywp.php</code> to begin the installation process</li>
+			</ul>
+			<p>
+				TinyWP will download the most recent version of WordPress directly from WordPress.org, unzip and install it on your server, and help you begin installing WordPress.
+			</p>
+			<p>
+				TinyWP is a very small fraction of the size of a full WordPress install.
+			</p>
+			<h2>How Does It Work</h2>
+			<p>
+				TinyWP is a very small PHP program that only includes enough code download WordPress and start the installation.
+			</p>
+			<p>
+				Here are the steps TinyWP takes:
+			</p>
+			<ul>
+				<li>Deletes itself</li>
+				<li>Downloads <a href='http://wordpress.org/latest.zip'><code>http://wordpress.org/latest.zip</code></a></li>
+				<li>Moves all the files in <code>latest.zip</code> from the <code>wordpress</code> directory to the root directory of the zip file</li>
+				<li>Extracts <code>latest.zip</code> to the current directory on the server</li>
+				<li>Deletes <code>latest.zip</code> from the server</li>
+				<li>Redirects the user to <code>./wp-admin/setup-config.php</code> to begin WordPress setup</li>
+	  	</ul>
+			<a href='https://github.com/pathawks/TinyWP' id='githubbanner' title='Fork me on GitHub'>Fork me on GitHub</a>
+		</div>
+	</body>
 </html>
