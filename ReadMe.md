@@ -3,7 +3,7 @@
 TinyWP provides a very small (<500 bytes) [WordPress](http://wordpress.org/) installation program that will bootstrap a larger WordPress installation.
 
 ## How To Use
-  * Download [TinyWP](https://github.com/DirtySuds/TinyWP/releases/download/1.0/tinywp.php)
+  * Download [TinyWP](https://github.com/DirtySuds/TinyWP/releases/download/1.1/tinywp.php)
   * Upload `tinywp.php` to your server, in the directory you want to install WordPress
   * Point your browser to `tinywp.php` to begin the installation process
   * TinyWP will download the most recent version of WordPress directly from WordPress.org, unzip and install it on your server, and help you begin installing WordPress.
