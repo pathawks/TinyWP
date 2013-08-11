@@ -1,27 +1,27 @@
-# TinyWP
+![TinyWP](http://tinywp.dirtysuds.com/TinyWP.png "TinyWP")
 
-TinyWP provides a very small (<500 bytes) [WordPress](http://wordpress.org/) installation program that will bootstrap a larger WordPress installation.
+**TinyWP** provides a very small (<500 bytes) [**WordPress**](http://wordpress.org/) installation program that will bootstrap a larger **WordPress** installation.
 
 ## How To Use
-  * Download [TinyWP](https://github.com/DirtySuds/TinyWP/releases/download/1.1/tinywp.php)
-  * Upload `tinywp.php` to your server, in the directory you want to install WordPress
+  * Download [**TinyWP**](https://github.com/DirtySuds/TinyWP/releases/download/1.1/tinywp.php)
+  * Upload `tinywp.php` to your server, in the directory you want to install **WordPress**
   * Point your browser to `tinywp.php` to begin the installation process
-  * TinyWP will download the most recent version of WordPress directly from WordPress.org, unzip and install it on your server, and help you begin installing WordPress.
+  * TinyWP will download the most recent version of **WordPress** directly from WordPress.org, unzip and install it on your server, and help you begin installing WordPress.
 
-TinyWP is a very small fraction of the size of a full WordPress install.
+**TinyWP** is a very small fraction of the size of a full **WordPress** install.
 
 ## How Does It Work
 
-TinyWP is a very small PHP program that only includes enough code download WordPress and start the installation.
+**TinyWP** is a very small PHP program that only includes enough code download **WordPress** and start the installation.
 
-Here are the steps TinyWP takes:
+Here are the steps **TinyWP** takes:
 
   * Deletes itself
   * Downloads [`http://wordpress.org/latest.zip`](http://wordpress.org/latest.zip)
   * Moves all the files in `latest.zip` from the wordpress directory to the root directory of the zip file
   * Extracts `latest.zip` to the current directory on the server
   * Deletes `latest.zip` from the server
-  * Redirects the user to `./wp-admin/setup-config.php` to begin WordPress setup
+  * Redirects the user to `./wp-admin/setup-config.php` to begin **WordPress** setup
 
 ## Authors
 [Pat Hawks](httt://pathawks.com) ([pat@pathawks.com](mailto:pat@pathawks.com))
