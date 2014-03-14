@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<meta charset='utf-8'>
-		<title>TinyWP - WordPress Installer</title>
-		<meta property="og:title" content="TinyWP" />
-		<meta property="og:description" content="TinyWP provides a very small WordPress installation program that will bootstrap a larger WordPress installation" />
+		<title>{{ site.github.project_title }} - WordPress Installer</title>
+		<meta property="og:title" content="{{ site.github.project_title }}" />
+		<meta property="og:description" content="{{ site.github.project_tagline }}" />
 		<meta property="og:type" content="website" />
 		<meta property="og:image" content="http://tinywp.dirtysuds.com/TinyWP.png" />
 		<link rel='shortcut icon' href='favicon.ico' />
@@ -101,31 +101,31 @@
 	</head>
 	<body>
 		<div id='container' itemscope itemtype='http://schema.org/SoftwareApplication'>
-			<h1 itemprop='name'>TinyWP</h1>
+			<h1 itemprop='name'>{{ site.github.project_title }}</h1>
 			<p itemprop='about'>
-				TinyWP provides a very small (&lt;500 bytes) <a href='http://WordPress.org'>WordPress</a> installation program that will bootstrap a larger WordPress installation.
+				{{ site.github.project_title }} provides a very small (&lt;500 bytes) <a href='http://WordPress.org'>WordPress</a> installation program that will bootstrap a larger WordPress installation.
 			</p>
 			<p class='downloadbutton'>
-				<a href='https://github.com/DirtySuds/TinyWP/releases/download/1.1/tinywp.php'>Download</a>
+				<a href='{{ site.github.releases_url }}/download/1.1/tinywp.php'>Download</a>
 			</p>
 			<h2>How To Use</h2>
 			<ul>
-				<li>Download <a href='https://github.com/DirtySuds/TinyWP/releases/download/1.0/tinywp.php'>TinyWP</a></li>
+				<li>Download <a href='{{ site.github.releases_url }}/download/1.1/tinywp.php'>{{ site.github.project_title }}</a></li>
 				<li>Upload <code>tinywp.php</code> to your server, in the directory you want to install WordPress</li>
 				<li>Point your browser to <code>tinywp.php</code> to begin the installation process</li>
 			</ul>
 			<p>
-				TinyWP will download the most recent version of WordPress directly from WordPress.org, unzip and install it on your server, and help you begin installing WordPress.
+				{{ site.github.project_title }} will download the most recent version of WordPress directly from WordPress.org, unzip and install it on your server, and help you begin installing WordPress.
 			</p>
 			<p>
-				TinyWP is a very small fraction of the size of a full WordPress install.
+				{{ site.github.project_title }} is a very small fraction of the size of a full WordPress install.
 			</p>
 			<h2>How Does It Work</h2>
 			<p>
-				TinyWP is a very small PHP program that only includes enough code download WordPress and start the installation.
+				{{ site.github.project_title }} is a very small PHP program that only includes enough code download WordPress and start the installation.
 			</p>
 			<p>
-				Here are the steps TinyWP takes:
+				Here are the steps {{ site.github.project_title }} takes:
 			</p>
 			<ul>
 				<li>Deletes itself</li>
@@ -137,7 +137,7 @@
 			</ul>
 			<h2>Authors</h2>
 			<p><a href='https://github.com/pathawks' rel='author' itemprop='author'>Pat Hawks</a> (<a href='mailto:pat@pathawks.com'>pat@pathawks.com</a>)</p>
-			<a href='https://github.com/DirtySuds/TinyWP/fork' id='githubbanner' title='Fork me on GitHub'>Fork me on GitHub</a>
+			<a href='{{ site.github.repository_url }}/fork' id='githubbanner' title='Fork me on GitHub'>Fork me on GitHub</a>
 		</div>
 	</body>
 </html>
