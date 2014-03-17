@@ -9,9 +9,9 @@
 		<meta property="og:title" content="{{ site.github.project_title }}" />
 		<meta property="og:description" content="{{ site.github.project_tagline }}" />
 		<meta property="og:type" content="website" />
-		<meta property="og:image" content="http://tinywp.dirtysuds.com/TinyWP.png" />
+		<meta property="og:image" content="{{ site.github.url }}/TinyWP.png" />
 		<link rel='shortcut icon' href='favicon.ico' />
-		<link rel='canonical' href='http://tinywp.dirtysuds.com/' />
+		<link rel='canonical' href='{{ site.github.url }}' />
 		<style type='text/css'>
 			html,body {
 				margin:0;
@@ -140,7 +140,7 @@
 			</ul>
 			<h2>Authors</h2>
 			<p><a href='https://github.com/pathawks' rel='author' itemprop='author'>Pat Hawks</a> (<a href='mailto:pat@pathawks.com'>pat@pathawks.com</a>)</p>
-			<a href='{{ site.github.repository_url }}/fork' id='githubbanner' title='Fork me on GitHub'>Fork me on GitHub</a>
+			<a href='{{ site.github.clone_url }}' id='githubbanner' title='Fork me on GitHub'>Fork me on GitHub</a>
 		</div>
 	</body>
 </html>
