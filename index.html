@@ -139,7 +139,9 @@
 				<li>Redirects the user to <code>./wp-admin/setup-config.php</code> to begin WordPress setup</li>
 			</ul>
 			<h2>Authors</h2>
-			<p><a href='https://github.com/pathawks' rel='author' itemprop='author'>Pat Hawks</a> (<a href='mailto:pat@pathawks.com'>pat@pathawks.com</a>)</p>
+			{% for author in site.github.contributors %}
+				<p><a href='{{ author.html_url }}' rel='author' itemprop='author'>{{ author.login }}</a></p>
+			{% endfor %}
 			<a href='{{ site.github.repository_url }}/fork' id='githubbanner' title='Fork me on GitHub'>Fork me on GitHub</a>
 		</div>
 	</body>
